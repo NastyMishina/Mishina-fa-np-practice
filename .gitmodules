@@ -235,3 +235,6 @@
 [submodule "MAS"]
 	path = MAS
 	url = https://github.com/NastyMishina/MAS
+[submodule "7_TCP_server"]
+	path = 7_TCP_server
+	url = https://github.com/NastyMishina/7_TCP_server.git
