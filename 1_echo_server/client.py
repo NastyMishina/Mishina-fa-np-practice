@@ -1,12 +1,15 @@
 import socket
 from time import sleep
 
+
+port_input = input("Введите номер порта для сервера -> ")
+ip_input = input("Введите IP для сервера -> ")
+
 sock = socket.socket()
 sock.setblocking(1)
-sock.connect(('127.0.0.1', 9090))
+sock.connect((ip_input, int(port_input)))
 
-#msg = input()
-msg = "Hi!"
+msg = input()
 sock.send(msg.encode())
 
 data = sock.recv(1024)
